@@ -1,0 +1,123 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.app-parent-container {
+ width: 80%;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+ font-size: 3rem;
+ font-weight: 800;
+ color: rgb(63, 89, 157);
+ padding-bottom: 5rem;
+ text-align: center;
+}
+
+#btn_mbl {
+ color: white;
+ background-color: rgb(63, 89, 157);
+ padding: 1rem 1.2rem;
+ font-size: 1.2rem;
+ border-radius: 10px;
+}
+
+.c_name {
+ /* width: 90%; */
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-size: 1.2rem;
+ color: rgb(63, 89, 157);
+ flex-wrap: wrap;
+}
+
+img {
+ padding: 1rem 0;
+ height: 70%;
+}
+
+/* .Android   img{
+ height: 75%;
+}
+.React img {
+ height: 80%;
+}
+.Swift img {
+ height: 80%;
+}
+.UI img {
+ height: 75%;
+}
+.Java img {
+ height: 80%;
+}
+.Ionic img {
+ height: 65%;
+}
+.Xamarin img {
+ height: 80%;
+} */
+.logo {
+ font-size: 1.5rem;
+ margin-top: 3rem;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ display: grid;
+ grid-template-columns: repeat(6, 2fr);
+ grid-template-rows: repeat(2, 100px);
+ grid-column-gap: 2rem;
+ grid-row-gap: 1rem;
+
+}
+
+.logo>div {
+ border: 3px solid rgb(230, 223, 223);
+ border-radius: 20px;
+ font-size: 0.8rem;
+}
+
+
+@media screen and (max-width:991px) {
+
+ .app-parent-container {
+  width: 90%;
+ }
+
+ h1 {
+  padding-bottom: 2rem;
+ }
+
+ #btn_mbl {
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+ }
+
+ .c_name {
+  width: 100%;
+  font-size: 1rem;
+  flex-wrap: wrap;
+ }
+
+ .logo {
+  grid-template-columns: repeat(4, 2fr);
+
+ }
+}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:576px) {}
